@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MineShoes</string>
+    <string name="actionbar_menu_account">My Account</string>
+    <string name="actionbar_menu_list">My Lists</string>
+    <string name="actionbar_menu_message">Your Messages</string>
+    <string name="actionbar_menu_service">Customer Service</string>
+    <string name="actionbar_menu_settings">Settings &amp; Info</string>
+    <string name="actionbar_menu_cart">My Cart</string>
+    <string name="actionbar_menu_search">Search</string>
+</resources>

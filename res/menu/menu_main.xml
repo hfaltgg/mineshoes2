@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.project.tianxie.mineshoes.MainActivity">
+    <item
+        android:id="@+id/actionbar_menu_account"
+        android:orderInCategory="100"
+        android:title="@string/actionbar_menu_account"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionbar_menu_list"
+        android:orderInCategory="100"
+        android:title="@string/actionbar_menu_list"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionbar_menu_message"
+        android:orderInCategory="100"
+        android:title="@string/actionbar_menu_message"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionbar_menu_service"
+        android:orderInCategory="100"
+        android:title="@string/actionbar_menu_service"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionbar_menu_setting"
+        android:orderInCategory="100"
+        android:title="@string/actionbar_menu_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionbar_menu_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="@string/actionbar_menu_search" />
+    <item
+        android:id="@+id/actionbar_menu_cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="@string/actionbar_menu_cart"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+</menu>

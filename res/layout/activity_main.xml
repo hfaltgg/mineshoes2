@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.tianxie.mineshoes.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_below="@+id/main_toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey100"
+        android:padding="5dp">
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_main_guideline"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/Women_button"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:paddingRight="3dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/activity_main_guideline"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@+id/Women_button"
+            app:layout_constraintLeft_toLeftOf="@+id/Women_button"
+            app:layout_constraintBottom_toBottomOf="@+id/Women_button"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Women"/>
+
+        <ImageView
+            android:id="@+id/Men_button"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:paddingLeft="3dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@+id/Men_button"
+            app:layout_constraintLeft_toLeftOf="@+id/Men_button"
+            app:layout_constraintBottom_toBottomOf="@+id/Men_button"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Men"/>
+
+        <ImageView
+            android:id="@+id/Girls_button"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@+id/Women_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/activity_main_guideline"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@+id/Girls_button"
+            app:layout_constraintLeft_toLeftOf="@+id/Girls_button"
+            app:layout_constraintBottom_toBottomOf="@+id/Girls_button"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Girls"/>
+
+        <ImageView
+            android:id="@+id/Boys_button"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:paddingLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@+id/Men_button"
+            app:layout_constraintLeft_toLeftOf="@+id/activity_main_guideline"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@+id/Boys_button"
+            app:layout_constraintLeft_toLeftOf="@+id/Boys_button"
+            app:layout_constraintBottom_toBottomOf="@+id/Boys_button"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="Boys"/>
+
+        <ImageView
+            android:id="@+id/All_button"
+            android:layout_width="0dp"
+            android:layout_height="135dp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@+id/Girls_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/activity_main_guideline"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="@+id/All_button"
+            app:layout_constraintLeft_toLeftOf="@+id/All_button"
+            app:layout_constraintBottom_toBottomOf="@+id/All_button"
+            android:paddingBottom="15dp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="View All"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
